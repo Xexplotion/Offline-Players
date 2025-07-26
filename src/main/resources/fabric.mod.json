@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "offline_players",
+	"version": "${version}",
+	"name": "Offline Players",
+	"description": "This mod adds offline players to the tab list!",
+	"authors": [
+		"X_explotion"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/offline_players/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.xexplotion.offline_players.OfflinePlayers"
+		],
+		"client": [
+			"net.xexplotion.offline_players.OfflinePlayersClient"
+		]
+	},
+	"mixins": [
+		"offline_players.mixins.json",
+		{
+			"config": "offline_players.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
