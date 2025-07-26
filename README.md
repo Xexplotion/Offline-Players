@@ -9,3 +9,4 @@ This mod allows players who have left the game to still be renderer in the tab l
 - Possible client side features
 
 If you find any bugs please report them to @X_explotion on Discord via DM. Have fun :)
+For specific versions, please check branches.
